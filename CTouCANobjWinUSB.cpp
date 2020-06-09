@@ -47,7 +47,7 @@ static DWORD MyCM_MapCrToWin32Err(CONFIGRET CmReturnCode, DWORD DefaultErr) {
 			CM_MapCrToWin32Err_impl = (CM_MapCrToWin32Err_type)CM_MapCrToWin32Err_stub;
 	}
 
-	return CM_MapCrToWin32Err_impl(CmReturnCode, DefaultErr);
+	return CM_MapCrToWin32Err_impl(CmReturnCode, (WORD)DefaultErr);
 }
 
 
